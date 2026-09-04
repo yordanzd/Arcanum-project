@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+}
+
+:root {
+    --tinta: #0B0E1A;
+    --tinta-suave: #12162A;
+    --pergamino: #E8DCC0;
+    --pergamino-tenue: #C9BDA0;
+    --vela: #C9962C;
+    --vela-brillante: #E8B84B;
+    --borgona: #6B1E23;
+    --bosque: #1F3D2B;
+    --plata: #8B93A8;
+    --linea: rgba(232, 220, 192, 0.14);
+}
+
+body,html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: var(--tinta);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    margin: 2% 0 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2%;
+}
+
+header h1 {
+    color: var(--pergamino);
+    margin: 0;
+}
+
+header nav {
+    margin-right: 5%;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--plata);
+}
+
+header a:hover {
+    color: var(--vela);
+}
+
+.separador {
+    width: 100%;
+    background-color: var(--vela-brillante);
+    height: 2px;
+    margin: 10px 0 10px 0;
+}
+
+.box {
+    background-color: var(--tinta-suave);
+    width: 80%;
+    margin: auto;
+    border: 1px solid var(--linea);
+    border-radius: 20px;
+    height: 90%;
+    padding: 10px;
+}
+
+.box .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.box .menu h2 {
+    color: var(--pergamino);
+}
+
+.box .menu .crear-historia {
+    background-color: var(--vela);
+    color: var(--borgona);
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    border: 1px solid var(--linea);
+    border-radius: 20px;
+}
+
+.historia {
+    background-color: var(--tinta);
+    width: 90%;
+    margin: auto;
+    border: 1px solid var(--linea);
+    border-radius: 20px;
+    height: auto;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.historia .info {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    color: var(--vela);
+    border: 1px solid var(--linea);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.historia .resumen {
+    color: var(--plata);
+    margin-bottom: 10px;
+}
+
+.historia .comenzar-btn {
+    background-color: var(--vela);
+    width: 150px;
+    border: 1px solid var(--linea);
+    border-radius: 15px;
+    color: var(--borgona);
+    font-size: 16px;
+}
